@@ -31,6 +31,9 @@ def lista_productos(request):
 def obtener_o_crear_carrito(usuario):
     carrito, creado = Carrito.objects.get_or_create(usuario=usuario)
     return carrito
+def chat_rasa(request):
+    return render(request, "productos/rasa.html")
+
 
 # 💳 Carrito para usuarios registrados (nuevas vistas)
 @login_required
