@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   
+    <style>
+        .header-bar {
+            background-color: #00FF00;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        .footer-bar {
+            background-color: #00FF00;
+            height: 50px;
+            margin-top: 20px;
+        }
+        .sidebar-red {
+            background-color: #FF0000;
+            min-height: 500px;
+            padding: 15px;
+        }
+        .banner-magenta {
+            background-color: #FF00FF;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        .box-orange {
+            background-color: #FFA500;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        .box-blue {
+            background-color: #0000FF;
+            height: 100px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+        .box-blue:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .main-content {
+            background-color: #FFFFFF;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        @media (max-width: 768px) {
+            .sidebar-red {
+                min-height: 200px;
+            }
+            .box-blue {
+                height: 80px;
+            }
+            .box-orange {
+                height: 120px;
+            }
+        }
+        </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <!-- Barra superior verde -->
+        <div class="row">
+            <div class="col-12 header-bar"></div>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="row">
+            <!-- Barra lateral roja -->
+            <div class="col-2 sidebar-red"></div>
+
+            <!-- Contenido principal -->
+            <div class="col-10">
+                <div class="main-content">
+                    <!-- Banner magenta -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="banner-magenta"></div>
+                        </div>
+                    </div>
+
+                    <!-- Dos cajas naranjas -->
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="box-orange"></div>
+                        </div>
+                        <div class="col-6">
+                            <div class="box-orange"></div>
+                        </div>
+                    </div>
+
+                    <!-- Cajas azules - Primera fila -->
+                    <div class="row g-3">
+                        <div class="col-6 col-sm-4 col-md-3 col-lg">
+                            <div class="box-blue"></div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg">
+                            <div class="box-blue"></div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg">
+                            <div class="box-blue"></div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg">
+                            <div class="box-blue"></div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg">
+                            <div class="box-blue"></div>
+                        </div>
+                    </div>
+                    <!-- Cajas azules - Segunda fila -->
+                    <div class="row g-3 mt-0">
+                        <div class="col-6 col-sm-4 col-md-3 col-lg">
+                            <div class="box-blue"></div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg">
+                            <div class="box-blue"></div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg">
+                            <div class="box-blue"></div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg">
+                            <div class="box-blue"></div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg">
+                            <div class="box-blue"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra inferior verde -->
+        <div class="row">
+            <div class="col-12 footer-bar"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
